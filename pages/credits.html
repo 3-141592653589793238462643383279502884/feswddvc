@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <nav id="horizontal">
+      <a href="home.html" ><img id="logo" src="../images/logo.png" alt=""></a><div class="borderblock"></div>
+      <a class="links" href="characters.html">Characters</a>
+      <a class="links" href="summons.html">Summons</a>
+      <a class="links" href="gallery.html">Gallery</a>
+      <a class="links" href="shop.html">Shop</a>
+      <a class="links" href="credits.html">Credits</a>
+    </nav>
+    <nav id="vertical">
+      <img id="sword" src="../images/sword.png" alt="">
+    </nav>
+    <!-- Chrome does not autoplay audio unless it's in an iframe but other browsers won't play audio from iframe -->
+    <!-- Worked around it by adding a silent mp3 file to the iframe so it can trigger the audio tag -->
+    <iframe src="../audio/silence.mp3" allow="autoplay" style="display:none"></iframe>
+    <audio autoplay id="creditmusic" src="../audio/birthofgod.mp3"></audio>
+    <div class="contentcontainer">
+      <div class="content">
+        <div id="creditsbackground">
+          <div id="darkbgcredits">
+            <ul>
+              <h1 class="title">Producer</h1>
+              <hr>
+              <li class="names">Hironobu Sakaguchi</li>
+              <h1 class="title">Director</h1>
+              <hr>
+              <li class="names">Yoshinori Kitase</li>
+              <h1 class="title">Map Plan Co-directors</h1>
+              <hr>
+              <li class="names">Takeshi Endo</li>
+              <li class="names">Motoharu Tanaka</li>
+              <li class="names">Takeshi Endo</li>
+              <li class="names">Masato Yagi</li>
+              <h1 class="title">Story by</h1>
+              <hr>
+              <li class="names">Kazushige Nojima</li>
+              <li class="names">Yoshinori Kitase</li>
+              <h1 class="title">Based on the story by</h1>
+              <hr>
+              <li class="names">Tetsuo Mizuno</li>
+              <h1 class="title">Testers</h1>
+              <hr>
+              <li class="names">Andy Hsu</li>
+              <li class="names">Yoshinobu Matsuo</li>
+              <li class="names">Sean Camanyag</li>
+              <li class="names">Stanford Ng</li>
+              <li class="names">Clayton S Chan</li>
+              <li class="names">Vangthonhoua Moua</li>
+              <li class="names">Terry Youjin Jung</li>
+              <li class="names">Seth E Williams</li>
+              <li class="names">Fernando Bustamante</li>
+              <h1 class="title">QA Analysts</h1>
+              <li class="names">Rich Cummings</li>
+              <li class="names">Kevin Seiter</li>
+              <li class="names">Tom White</li>
+              <li class="names">Brand Inman</li>
+              <li class="names">Conner Morlang</li>
+              <li class="names">Pete Mayberry</li>
+              <li class="names">Annete Dancel</li>
+              <li class="names">Chris Johnson</li>
+              <li class="names">Jo Aragones</li>
+              <li class="names">Charles Delay</li>
+              <li class="names">Bruce Cochrane</li>
+              <li class="names">Donovan Soto</li>
+              <li class="names">Jose Cruz</li>
+              <li class="names">Jim Harper</li>
+              <li class="names">Chad Lowe</li>
+              <li class="names">Jason Torres</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer><div class="borderblock"></div>Final Fantasy VII &copy 2018 by Leonardo Rodriguez</footer>
+    <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>

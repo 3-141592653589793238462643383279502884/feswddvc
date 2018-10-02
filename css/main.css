@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+}
+                            /* LANDING PAGE */
+#landing {
+  font-family: 'Roboto', sans-serif;
+  background: url('../images/selection.jpg') 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.selections {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice{
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+                                  /* NAVIGATION */
+nav {
+  background-color: #000;
+}
+
+#horizontal {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: ridge 5px #c5a701;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.borderblock {
+  width: 140px;
+  height: 10px;
+  background-color: #000;
+  top: 90px;
+  left: 0px;
+  position: absolute;
+}
+
+#vertical {
+  width: 150px;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  padding-top: 70px;
+  border: ridge 5px #c5a701;
+  border-top: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: scroll;
+}
+
+#horizontal a {
+  font-family: "finalf";
+  text-decoration: none;
+  color: #FFF;
+  transition: .5s;
+}
+
+#horizontal a:hover {
+  color: #c5a701;
+  font-size: 30px;
+  transition: .5s;
+}
+
+#logo {
+  width: 120px;
+  height: 80px;
+  padding: 0 44px 0 44px;
+}
+
+.links{
+  /* flex: 5; */
+  margin-right: 120px;
+  font-size: 20px;
+}
+
+/* Sword in nav bar */
+#sword {
+  transform: rotate(-46deg);
+  height: 484px;
+  position: absolute;
+  top: 243px;
+  left: -225px;
+  top: 27%;
+}
+                            /* HOME PAGE */
+
+#backgroundvid {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.contentcontainer {
+  position: relative;
+  z-index: -2;
+  top: -100px;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: scroll;
+}
+
+.contentheading {
+  color: #FFF;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 4px 4px 4px #000;
+  padding-top: 130px;
+  margin-left: 149px;
+}
+
+.textcontainer {
+  padding-top: 80px;
+  padding-right: 120px;
+  padding-left: 120px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 149px;
+}
+
+.textcontainer p{
+  font-family: verdana;
+  background-color: rgba(0,0,0,.6);
+  padding: 30px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  background-color: #000;
+  border: ridge 5px #c5a701;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+footer .borderblock{
+  top: -5px;
+}
+
+
+                              /* CHARACTERS/SUMMONS */
+
+#humanbackground {
+  margin-left: 149px;
+  height: 100%;
+  background: url('../images/characters.jpg');
+  background-size: 100% 100%;
+}
+
+#summonbackground {
+  margin-left: 149px;
+  height: 100%;
+  background: url('../images/summons.jpg');
+  background-size: 100% 100%;
+}
+
+.heading {
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 4px 4px 4px #000;
+  padding-top: 130px;
+  margin-left: 0;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  border: ridge 5px #c5a701;
+  cursor: pointer;
+}
+
+                              /* MODAL */
+
+#modalbg {
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 98px;
+  width: 89.7%;
+  height: 758px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#closemodal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, .7);
+  width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#characterpic {
+  /* border: solid #FFF; */
+  width: 540px;
+  height: 497px;
+  /* background: url("../images/cloudfull.png"); */
+  background-size: cover;
+}
+
+#infosection {
+  /* border: solid red; */
+  width: 550px;
+  height: 330px;
+  color: #FFF;
+  padding: 30px 40px 0 10px;
+  text-align: justify;
+}
+
+.infoheading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info {
+  line-height: 25px;
+}
+
+                              /* GALLERY */
+
+#slideshow {
+  margin-left: 149px;
+  margin-top: 100px;
+  height: 65%;
+}
+
+#slideoptions {
+  margin-left: 149px;
+  height: 19%;
+  display: flex;
+}
+
+.options {
+  border-top: ridge #c5a701;
+  border-right: ridge #c5a701;
+  width: 161.4px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.options:hover {
+  cursor: pointer;
+  width: 270px;
+  transition: .5s;
+}
+
+                            /* SHOP */
+
+#gallerybackground {
+  margin-left: 149px;
+  height: 100%;
+  background: url('../images/midgar.jpg');
+  background-size: 100% 100%;
+}
+
+#darkbg {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gamesection {
+  /* border: solid white; */
+  /* padding-top: 10px; */
+  display: flex;
+  justify-content: space-around;
+  /* height: 500px; */
+}
+
+#recommended {
+  /* border: solid orange; */
+  /* padding-top: 10px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.gameheading {
+  color: #FFF;
+  padding: 10px 40px 40px 40px;
+}
+
+.game {
+  border: ridge 5px #c5a701;
+  margin-bottom: 25px;
+  width: 140px;
+  height: 140px;
+  transition: .5s;
+}
+
+.game:hover{
+  height: 200px;
+  width: 200px;
+  transition: .5s;
+}
+
+#cover1 {
+  background: url('../images/ff7.jpg') 100%;
+  background-size: cover;
+}
+
+#cover2 {
+  background: url('../images/ff7remake.jpg') 100%;
+  background-size: cover;
+}
+
+#cover3 {
+  background: url('../images/adventchildren.jpg') 100%;
+  background-size: cover;
+}
+
+#cover4 {
+  background: url('../images/dirge.jpg') 100%;
+  background-size: cover;
+}
+
+#cover5 {
+  background: url('../images/crisis.jpg') 100%;
+  background-size: cover;
+}
+
+#cover6 {
+  background: url('../images/dissidia.jpg') 100%;
+  background-size: cover;
+}
+
+#cover7 {
+  background: url('../images/kh1525.jpg') 100%;
+  background-size: cover;
+}
+
+#cover8 {
+  background: url('../images/kh28.jpg') 100%;
+  background-size: cover;
+}
+
+#cover9 {
+  background: url('../images/kh3.jpg') 100%;
+  background-size: cover;
+}
+
+                            /* CREDITS */
+
+#creditsbackground {
+  margin-left: 149px;
+  height: 100%;
+  background: url('../images/credits.jpg');
+  background-size: 100% 100%;
+}
+
+#darkbgcredits {
+  background-color: rgba(0, 0, 0, .7);
+  height: 85%;
+  display: flex;
+  padding-top: 98px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#darkbgcredits ul {
+  position: relative;
+  animation: scrollup 80s forwards;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  padding: 80px 0 20px 0;
+  text-shadow: 4px 4px 4px #000;
+}
+
+.names {
+  color: #FFF;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+ul hr {
+  width: 700px;
+  border-color: #c5a701;
+}
+
+                            /* KEYFRAMES */
+
+@keyframes scrollup {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -350%;
+  }
+}
